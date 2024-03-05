@@ -18,13 +18,13 @@ function App() {
     <div className='App'>
       <button onClick={handleButtonClick}>Click me</button>
       <h1>Hi</h1>
-      {emp.map((obj,index) => {
-        return (
-    // <Employee key={index} name={obj.name} age={obj.age}/>
-    <Employee key={index} {...obj}/>
+      {
+        emp.map((obj,index) => 
+         (
+          // <Employee key={index} name={obj.name} age={obj.age}/>
+          <Employee key={index} {...obj}/>
         )
-      })}
-  
+      )}
     </div>    
   );
 }

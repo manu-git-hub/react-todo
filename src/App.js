@@ -1,17 +1,31 @@
-import { useState } from "react";
-import React from 'react';
-import Counter from "./counter";
-
+import './App.css'
 function App() {
-  const [state, setState] = useState(false);
 
   return (
     <div className="app">
-      <h1 onClick={() => setState(!state) }>React Hooks Example</h1>
-      {/* Mounting & Unmounting */}
-      {/* {state ? <Counter /> : null} */}
-      {state && <Counter /> }
+    <div className="mainHeading">
+      <h1>ToDo List</h1>
     </div>
+    <div className="subHeading">
+      <br />
+      <h2>Whoop, it's Wednesday 🌝 ☕ </h2>
+    </div>
+    <div className="input">
+      <input type="text" placeholder="🖊️ Add item..." />
+      <i className="fas fa-plus"></i>
+    </div>
+    <div className="todos">
+      <div className="todo">
+        <div className="left">
+          <input type="checkbox" name="" id="" />
+          <p>Rect tutorial</p>
+        </div>
+        <div className="right">
+          <i className="fas fa-times"></i>
+        </div>
+      </div>
+    </div>
+  </div>
   );
 }
 

@@ -13,7 +13,8 @@ function App() {
     <div className='App'>
       <button onClick={handleButtonClick}>Click me</button>
       <h1>Hi</h1>
-      <Counter count={count}/>
+      <Counter title="1st Counter" count={count}/>
+      <Counter title="2nd COunter" count={count}/>
     </div>    
   );
 }
